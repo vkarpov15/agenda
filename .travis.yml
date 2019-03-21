@@ -25,4 +25,4 @@ script: npm test
 before_script:
   - mongo --version
   - mongod --version
-after_script: make test-coveralls
+after_script: npm test
