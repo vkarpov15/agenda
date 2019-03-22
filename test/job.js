@@ -40,7 +40,7 @@ describe('Job', () => {
       if (err) {
         done(err);
       }
-      MongoClient.connect(mongoCfg, async(err, client) => {
+      MongoClient.connect(mongoCfg, { useNewUrlParser: true }, async(err, client) => {
         if (err) {
           done(err);
         }
